@@ -1,0 +1,353 @@
+/* General Styles */
+:root {
+    --primary-color: #0056b3;
+    --secondary-color: #004494;
+    --accent-color: #e7f1ff;
+    --text-color: #333;
+    --light-text: #666;
+    --bg-color: #fff;
+    --section-bg: #f8f9fa;
+    --border-color: #dee2e6;
+    --font-main: 'Roboto', sans-serif;
+    --font-header: 'Lato', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-main);
+    color: var(--text-color);
+    line-height: 1.6;
+    background-color: var(--bg-color);
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background-color: var(--primary-color);
+    background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.07) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.07) 1px, transparent 1px),
+        linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    background-size: 30px 30px, 30px 30px, 100% 100%;
+    background-attachment: fixed;
+    
+    color: #fff;
+    padding: 80px 0; 
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+header::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 60%);
+    pointer-events: none; /* 确保不影响点击 */
+}
+
+/* header {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+} */
+
+header h1 {
+    font-family: var(--font-header);
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+header h2 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    opacity: 0.9;
+    margin-bottom: 20px;
+}
+
+.date-location {
+    font-size: 1.1rem;
+    margin-top: 15px;
+    opacity: 0.9;
+}
+
+.conference-info {
+    font-size: 1rem;
+    margin-top: 5px;
+    font-style: italic;
+    opacity: 0.8;
+}
+
+.speaker a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.speaker a:hover i.fa-user-circle {
+    color: var(--primary-color);
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
+.speaker img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    background-color: #eee;
+    transition: transform 0.3s ease;
+}
+
+.speaker a:hover img {
+    transform: scale(1.1);
+}
+
+/* Navigation */
+nav {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 15px 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: var(--text-color);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: var(--primary-color);
+}
+
+/* Sections */
+section {
+    padding: 60px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+section:last-child {
+    border-bottom: none;
+}
+
+section h3 {
+    font-family: var(--font-header);
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 30px;
+    text-align: center;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+section h3::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: var(--secondary-color);
+    margin: 10px auto 0;
+}
+
+section h4 {
+    font-family: var(--font-header);
+    font-size: 1.4rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: var(--secondary-color);
+}
+
+section p, section li {
+    font-size: 1.05rem;
+    margin-bottom: 15px;
+}
+
+section ul, section ol {
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+section ul li, section ol li {
+    margin-bottom: 5px;
+}
+
+/* Tracks */
+.tracks {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.track {
+    flex: 1;
+    background: var(--section-bg);
+    padding: 25px;
+    border-radius: 8px;
+    min-width: 300px;
+    border: 1px solid var(--border-color);
+}
+
+.track h4 {
+    margin-top: 0;
+}
+
+/* Lists */
+ul.dates {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul.dates li {
+    padding: 10px 0;
+    border-bottom: 1px dashed var(--border-color);
+}
+
+/* Speakers */
+.speaker-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.speaker {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.speaker:hover {
+    transform: translateY(-5px);
+}
+
+.speaker img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    background-color: #eee;
+}
+
+.speaker h4 {
+    font-size: 1.1rem;
+    margin: 10px 0 5px;
+    color: var(--text-color);
+}
+
+.speaker p {
+    font-size: 0.9rem;
+    color: var(--light-text);
+    margin-bottom: 0;
+}
+
+/* Schedule */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: #fff;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+th {
+    background-color: var(--section-bg);
+    font-weight: 700;
+}
+
+tr:hover {
+    background-color: var(--accent-color);
+}
+
+/* Organizers */
+.organizer-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.organizer-list p {
+    margin-bottom: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .tracks {
+        flex-direction: column;
+    }
+}
+
