@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,11 +18,13 @@
             text-decoration: none;
             transition: background-color 0.3s;
         }
+
         .btn:hover {
             background-color: #f0f0f0;
             color: var(--secondary-color);
             text-decoration: none;
         }
+
         .speaker i.fa-user-circle {
             font-size: 80px;
             color: #ddd;
@@ -29,6 +32,7 @@
         }
     </style>
 </head>
+
 <body>
 
     <header>
@@ -36,7 +40,8 @@
             <h1>Workshop on Multi-Agent Learning and Its Opportunities in the Era of Generative AI</h1>
             <h2>ICLR 2026 Workshop</h2>
             <!-- <p class="date-location"><i class="far fa-calendar-alt"></i> Date: April 2026 | <i class="fas fa-map-marker-alt"></i> Location: TBD</p> -->
-            <p class="date-location"><i class="far fa-calendar-alt"></i> April 2026 (Day TBD) &nbsp; | &nbsp; <i class="fas fa-map-marker-alt"></i> Rio de Janeiro, Brazil</p>
+            <p class="date-location"><i class="far fa-calendar-alt"></i> April 2026 (Day TBD) &nbsp; | &nbsp; <i
+                    class="fas fa-map-marker-alt"></i> Rio de Janeiro, Brazil</p>
             <p class="conference-info">The Fourteenth International Conference on Learning Representations</p>
             <div style="margin-top: 20px;">
                 <a href="#cfp" class="btn">Submit a Paper</a>
@@ -57,62 +62,154 @@
     </nav>
 
     <main class="container">
-        
+
         <section id="about">
             <h3>About</h3>
             <p>
-                The rapid emergence of generative AI has revitalized interest in multi-agent learning as a foundation for building systems that can reason, coordinate, and adapt across diverse environments. This workshop seeks to explore the growing convergence between multi-agent learning and generative AI, emphasizing their mutual potential to advance both theoretical understanding and practical capability.
+                The rapid emergence of generative AI has revitalized interest in multi-agent learning as a foundation
+                for building systems that can reason, coordinate, and adapt across diverse environments. This workshop
+                seeks to explore the growing convergence between multi-agent learning and generative AI, emphasizing
+                their mutual potential to advance both theoretical understanding and practical capability.
             </p>
             <p>
                 We focus on three interrelated fronts where this integration is most visible:
             </p>
             <ol>
-                <li><strong>LLM-based multi-agent systems</strong>, where large language models interact, cooperate, or compete in structured settings;</li>
-                <li><strong>Real-world distributed system control</strong>, where multi-agent learning offers scalable and data-driven coordination strategies for complex real-world systems such as smart cities;</li>
-                <li><strong>Human-AI interaction</strong>, where generative AI enables richer modelling of human preferences, values, and behaviours, supporting more human-aligned multi-agent systems.</li>
+                <li><strong>LLM-based multi-agent systems</strong>, where large language models interact, cooperate, or
+                    compete in structured settings;</li>
+                <li><strong>Real-world distributed system control</strong>, where multi-agent learning offers scalable
+                    and data-driven coordination strategies for complex real-world systems such as smart cities;</li>
+                <li><strong>Human-AI interaction</strong>, where generative AI enables richer modelling of human
+                    preferences, values, and behaviours, supporting more human-aligned multi-agent systems.</li>
             </ol>
             <p>
-                By bringing together researchers from machine learning, game theory, cognitive science, and human-computer interaction, this workshop aims to bridge methodological insights and emerging applications, fostering a shared agenda for the age of multi-agent generative AI systems.
+                By bringing together researchers from machine learning, game theory, cognitive science, and
+                human-computer interaction, this workshop aims to bridge methodological insights and emerging
+                applications, fostering a shared agenda for the age of multi-agent generative AI systems.
             </p>
         </section>
 
         <section id="cfp">
             <h3>Call for Papers</h3>
             <p>
-                We warmly invite submissions from researchers, practitioners, and students working at the intersection of multi-agent learning and generative AI. Accepted papers will be presented as posters, with a selection of outstanding submissions invited for spotlight or oral presentations. The workshop is non-archival.
+                We warmly invite submissions from researchers, practitioners, and students working at the intersection
+                of multi-agent learning and generative AI. Accepted papers will be presented as posters, with a
+                selection of outstanding submissions invited for spotlight or oral presentations. The workshop is
+                non-archival.
             </p>
 
             <div class="tracks">
                 <div class="track">
                     <h4>Main Research Track</h4>
-                    <p><strong>6-8 pages</strong></p>
-                    <p>Full papers presenting novel methods, theoretical analyses, or comprehensive empirical results related to the workshop topics.</p>
+                    <p><strong>6-8 pages (excluding references and appendices)</strong></p>
+                    <p>Full papers presenting novel methods, theoretical analyses, or comprehensive empirical results
+                        related to the workshop topics.</p>
                 </div>
                 <div class="track">
                     <h4>Blueprint Track</h4>
-                    <p><strong>2-4 pages</strong></p>
-                    <p>Visionary, exploratory, or critical perspectives, including conceptual frameworks, preliminary research, new perspectives, or tools/benchmarks.</p>
+                    <p><strong>2-4 pages (excluding references and appendices)</strong></p>
+                    <p>Visionary, exploratory, or critical perspectives, including conceptual frameworks, preliminary
+                        research, new perspectives, or tools/benchmarks.</p>
                 </div>
             </div>
 
-            <h4>Topics of Interest</h4>
+            <h4>Topics of Interest (including but not limited to)</h4>
             <ul>
-                <li>Multi-Agent Learning Paradigms for LLMs</li>
-                <li>Generative AI for Multi-Agent Learning</li>
-                <li>Multi-Agent Exploration for Generative AI</li>
-                <li>Environments for Testing and Developing Multi-Agent Learning</li>
-                <li>Human-AI Interaction</li>
+                <li><strong>Multi-Agent Learning Paradigms for LLMs</strong>
+                    <ul>
+                        <li>Cooperative multi-agent reinforcement learning for improving coordination between modules
+                            within the multi-agent system LLMs (LLM orchestration)</li>
+                        <li>Adversarial training for improving the generalizability of the single LLM training</li>
+                        <li>Open multi-agent reinforcement learning/ad hoc teamwork for a multi-agent system LLMs to
+                            deal with some unknown and situational function/data providers</li>
+                        <li>Formalism of full/partial information required in modelling multi-agent system LLMs and the
+                            minimal information each agent needs</li>
+                        <li>Strengths/weaknesses of natural language as both the action space and the observation space
+                            in the multi-agent system LLMs</li>
+                        <li>Criteria for evaluating a "well structured" multi-agent system LLMs in completing a task
+                            (e.g., game-theoretic approaches and models)</li>
+                        <li>Coordination mechanisms for improving performance of multi-agent system LLMs, which can be
+                            either predefined or learned from data</li>
+                        <li>Structures (e.g., chains, graphs, etc.) to represent a multi-agent system for LLMs</li>
+                        <li>Application of coordination graphs (e.g., DAGs, factor graphs, etc.) on decomposing reward
+                            functions for training multi-agent system LLMs</li>
+                    </ul>
+                </li>
+                <li><strong>Generative AI for Multi-Agent Learning</strong>
+                    <ul>
+                        <li>World models for improving the data quality for multi-agent learning</li>
+                        <li>Reward models for improving multi-agent learning with sparse rewards</li>
+                        <li>Generative AI to generate a diverse set of agent models</li>
+                        <li>Generative models (e.g., diffusion models) for improving multi-agent learning</li>
+                        <li>Graph-based generative AI for improving graph-structured multi-agent learning and emergent
+                            communication between agents</li>
+                        <li>Multi-agent systems for the modular generative models</li>
+                    </ul>
+                </li>
+                <li><strong>Multi-Agent Exploration for Generative AI</strong>
+                    <ul>
+                        <li>Multi-agent exploration for coordinating modules in the modular generative AI models</li>
+                        <li>The role of entropy of agent policies (generators) in the modular generative AI learning
+                        </li>
+                    </ul>
+                </li>
+                <li><strong>Environments for Testing and Developing Multi-Agent Learning</strong>
+                    <ul>
+                        <li>Environments of real-world decentralised or distributed control problems</li>
+                        <li>Computationally efficient environments for generative AI-based multi-agent learning</li>
+                        <li>Light environments (without LLMs) for simulating the human-AI interaction process</li>
+                        <li>JAX environments for accelerating multi-agent simulation processes</li>
+                    </ul>
+                </li>
+                <li><strong>Human-AI Interaction</strong>
+                    <ul>
+                        <li>Learning paradigms for improving the capability of AI agents to adapt to human instructions
+                            or proactively guide humans</li>
+                        <li>Capable and interpretable (explainable) human models trained by generative AI</li>
+                        <li>Appropriate medium of conveying human instructions to AI agents (e.g., natural language,
+                            formal methods and learning embeddings)</li>
+                        <li>Approaches for estimating human intentions enabling AI agents to make better decision</li>
+                    </ul>
+                </li>
             </ul>
 
-            <h4>Important Dates</h4>
+            <h4>Important Dates and Information</h4>
             <ul class="dates">
-                <li><strong>Paper Submission Deadline:</strong> 30 January 2026, 11:59pm AOE</li>
-                <li><strong>Notification of Acceptance:</strong> 1 March 2026, 11:59pm AOE</li>
+                <li><strong>Paper Submission Deadline:</strong> 5 February 2026, 11:59pm AOE</li>
+                <li><strong>Notification of Acceptance (hard deadline):</strong> 1 March 2026, 11:59pm AOE</li>
                 <li><strong>Camera-Ready Due:</strong> 3 April 2026, 11:59pm AOE</li>
             </ul>
-            
-            <p><strong>Submission Platform:</strong> All submissions will be managed through OpenReview. (Link to come)</p>
-            <p><em>Note: All submissions must use the official ICLR 2026 LaTeX template. Double-blind review policy applies.</em></p>
+
+            <p><strong>Submission Platform:</strong> All submissions will be managed through OpenReview. (Link to come)
+            </p>
+            <!-- <p><em>Note: All submissions must use the official ICLR 2026 LaTeX template. Double-blind review policy
+                    applies.</em></p> -->
+
+            <h4>Review Process</h4>
+            <ul>
+                <li><strong>Submission Platform:</strong> All submissions will be managed through OpenReview.</li>
+                <li><strong>Double-Blind Review:</strong> We enforce a double-blind review policy to ensure anonymity
+                    and impartiality for both authors and reviewers.</li>
+                <li><strong>Reviewer Assignment:</strong> Each submission will be evaluated by <strong>at least two
+                        members</strong> of the program committee with expertise in multi-agent learning, generative AI,
+                    or related
+                    fields.</li>
+                <li><strong>Final Decisions:</strong> Final acceptance decisions will be made by the organizing
+                    committee based on reviewer feedback and a thorough discussion period.</li>
+                <li><strong>Conflict of Interest:</strong> We will strictly adhere to the ICLR policy on Conflicts of
+                    Interest (COI). Reviewers will be required to declare any potential conflicts, and conflicted papers
+                    will be reassigned.</li>
+                <li><strong>LLM Usage Policy:</strong> We will follow the official <a
+                        href="https://blog.iclr.cc/2025/08/26/policies-on-large-language-model-usage-at-iclr-2026/">ICLR
+                        2026 Policies on Large
+                        Language Model
+                        Usage</a>. In
+                    particular, AI systems may be used by workshop participants or organizers for supportive roles
+                    (e.g., language refinement, brainstorming, or discussion moderation), but <strong>AI-generated
+                        papers are not permitted for normal or tiny paper submissions</strong>. All AI contributions
+                    must remain under human oversight and validation, and the role of AI (if any) in the preparation of
+                    submissions must be transparently acknowledged.</li>
+            </ul>
         </section>
 
         <section id="speakers">
@@ -127,20 +224,20 @@
                     <p>King's College London</p>
                 </div>
                 <div class="speaker">
-                    <a href="https://www.karltuyls.net/" target="_blank">
+                    <a href="https://engineering.nyu.edu/faculty/eugene-vinitsky" target="_blank">
                         <!-- <i class="fas fa-user-circle"></i> -->
-                        <img src="img/speakers/karl_tuyls.jpg" alt="Karl Tuyls">
+                        <img src="img/panelists/eugene_vinitsky.jpg" alt="Eugene Vinitsky">
                     </a>
-                    <h4>Karl Tuyls</h4>
-                    <p>imec, University of Liverpool, University of Leuven</p>
+                    <h4>Eugene Vinitsky</h4>
+                    <p>New York University</p>
                 </div>
                 <div class="speaker">
-                    <a href="https://www.cs.utexas.edu/~pstone/" target="_blank">
+                    <a href="https://zhijing-jin.com/" target="_blank">
                         <!-- <i class="fas fa-user-circle"></i> -->
-                        <img src="img/speakers/peter_stone.jpg" alt="Peter Stone">
+                        <img src="img/panelists/zhijing_jin.jpg" alt="Zhijing Jin">
                     </a>
-                    <h4>Peter Stone</h4>
-                    <p>University of Texas at Austin, Sony AI</p>
+                    <h4>Zhijing Jin</h4>
+                    <p>University of Toronto</p>
                 </div>
                 <div class="speaker">
                     <a href="https://natashajaques.ai//" target="_blank">
@@ -149,6 +246,14 @@
                     </a>
                     <h4>Natasha Jaques</h4>
                     <p>University of Washington, Google DeepMind</p>
+                </div>
+                <div class="speaker">
+                    <a href="https://www.cs.utexas.edu/~pstone/" target="_blank">
+                        <!-- <i class="fas fa-user-circle"></i> -->
+                        <img src="img/speakers/peter_stone.jpg" alt="Peter Stone">
+                    </a>
+                    <h4>Peter Stone</h4>
+                    <p>University of Texas at Austin, Sony AI</p>
                 </div>
             </div>
 
@@ -185,18 +290,20 @@
                         <!-- <i class="fas fa-user-circle"></i> -->
                         <img src="img/panelists/marc_lanctot.jpg" alt="Marc Lanctot">
                     </a>
-                    <h4>Marc Lanctot*</h4>
+                    <h4>Marc Lanctot</h4>
                     <p>Google DeepMind</p>
-                    <p class="tentative" style="font-size: 0.8rem; color: #888; margin-top: -5px;">*Tentatively Confirmed</p>
+                    <!-- <p class="tentative" style="font-size: 0.8rem; color: #888; margin-top: -5px;">*Tentatively
+                        Confirmed</p> -->
                 </div>
                 <div class="speaker">
                     <a href="https://personal.ntu.edu.sg/boan/" target="_blank">
                         <!-- <i class="fas fa-user-circle"></i> -->
                         <img src="img/panelists/bo_an.jpg" alt="Bo An">
                     </a>
-                    <h4>Bo An*</h4>
+                    <h4>Bo An</h4>
                     <p>Nanyang Technological University</p>
-                    <p class="tentative" style="font-size: 0.8rem; color: #888; margin-top: -5px;">*Tentatively Confirmed</p>
+                    <!-- <p class="tentative" style="font-size: 0.8rem; color: #888; margin-top: -5px;">*Tentatively
+                        Confirmed</p> -->
                 </div>
             </div>
         </section>
@@ -204,20 +311,86 @@
         <section id="schedule">
             <h3>Tentative Schedule</h3>
             <table>
-                <tr><th>Time</th><th>Session</th></tr>
-                <tr><td>09:00 - 09:20</td><td>Opening Remarks</td></tr>
-                <tr><td>09:20 - 09:50</td><td>Invited Keynote 1</td></tr>
-                <tr><td>09:50 - 10:20</td><td>Invited Keynote 2</td></tr>
-                <tr><td>10:20 - 11:00</td><td>Oral Paper Presentations</td></tr>
-                <tr><td>11:00 - 11:20</td><td>Networking Session</td></tr>
-                <tr><td>11:20 - 12:00</td><td>Poster Session 1</td></tr>
-                <tr><td>12:00 - 13:00</td><td>Lunch</td></tr>
-                <tr><td>13:00 - 13:30</td><td>Invited Keynote 3</td></tr>
-                <tr><td>13:30 - 14:00</td><td>Invited Keynote 4</td></tr>
-                <tr><td>14:00 - 14:20</td><td>Networking Session</td></tr>
-                <tr><td>14:20 - 15:00</td><td>Poster Session 2</td></tr>
-                <tr><td>15:00 - 15:50</td><td>Panel Discussion</td></tr>
-                <tr><td>15:50 - 16:00</td><td>Closing Remarks</td></tr>
+                <tr>
+                    <th>Time</th>
+                    <th>Session</th>
+                    <th>Duration</th>
+                </tr>
+                <tr>
+                    <td>09:00 - 09:15</td>
+                    <td>Opening Remarks</td>
+                    <td>15 minutes</td>
+                </tr>
+                <tr>
+                    <td>09:15 - 09:55</td>
+                    <td>Invited Keynote 1</td>
+                    <td>40 minutes</td>
+                </tr>
+                <tr>
+                    <td>09:55 - 10:35</td>
+                    <td>Invited Keynote 2</td>
+                    <td>40 minutes</td>
+                </tr>
+                <tr>
+                    <td>10:35 - 10:55</td>
+                    <td>Break & Networking</td>
+                    <td>20 minutes</td>
+                </tr>
+                <tr>
+                    <td>10:55 - 11:25</td>
+                    <td>Oral Paper Presentation 1</td>
+                    <td>15 x 2 minutes</td>
+                </tr>
+                <tr>
+                    <td>11:25 - 12:05</td>
+                    <td>Poster Session 1</td>
+                    <td>40 minutes</td>
+                </tr>
+                <tr>
+                    <td>12:05 - 13:10</td>
+                    <td>Lunch & Networking</td>
+                    <td>65 minutes</td>
+                </tr>
+                <tr>
+                    <td>13:10 - 13:50</td>
+                    <td>Invited Keynote 3</td>
+                    <td>40 minutes</td>
+                </tr>
+                <tr>
+                    <td>13:50 - 14:30</td>
+                    <td>Invited Keynote 4</td>
+                    <td>40 minutes</td>
+                </tr>
+                <tr>
+                    <td>14:30 - 14:50</td>
+                    <td>Break & Networking</td>
+                    <td>20 minutes</td>
+                </tr>
+                <tr>
+                    <td>14:50 - 15:30</td>
+                    <td>Invited Keynote 5</td>
+                    <td>40 minutes</td>
+                </tr>
+                <tr>
+                    <td>15:30 - 16:00</td>
+                    <td>Oral Paper Presentation 2</td>
+                    <td>15 x 2 minutes</td>
+                </tr>
+                <tr>
+                    <td>16:00 - 16:40</td>
+                    <td>Poster Session 2</td>
+                    <td>40 minutes</td>
+                </tr>
+                <tr>
+                    <td>16:40 - 17:30</td>
+                    <td>Panel Discussion</td>
+                    <td>50 minutes</td>
+                </tr>
+                <tr>
+                    <td>17:30 - 17:40</td>
+                    <td>Closing Remarks</td>
+                    <td>10 minutes</td>
+                </tr>
             </table>
         </section>
 
@@ -291,6 +464,14 @@
             </div>
         </section>
 
+        <section id="contact">
+            <h3>Contact</h3>
+            <p>For any inquiries, please contact <a href="mailto:iclr2026malgai@gmail.com">iclr2026malgai@gmail.com</a>.
+                To catch up with us, please follow us on <a
+                    href="https://x.com/malgai_iclr2026?s=21&t=3DrkDfguxl3PC2sQh_myNw" target="_blank">X</a>.
+            </p>
+        </section>
+
     </main>
 
     <footer>
@@ -300,5 +481,5 @@
     </footer>
 
 </body>
-</html>
 
+</html>
