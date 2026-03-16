@@ -57,6 +57,49 @@ header {
     overflow: hidden;
 }
 
+header .container {
+    position: relative;
+    z-index: 1;
+}
+
+header .hero-sponsor-badge {
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 16px;
+    margin-bottom: 20px;
+    border-radius: 999px;
+    background-color: rgba(255, 255, 255, 0.16);
+    border: 1px solid rgba(255, 255, 255, 0.38);
+    backdrop-filter: blur(2px);
+}
+
+header .hero-sponsor-label {
+    font-size: 0.78rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.86);
+}
+
+header .hero-sponsor-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 12px;
+    border-radius: 999px;
+    background-color: #ffffff;
+    color: #12263a;
+    font-weight: 700;
+}
+
+header .hero-sponsor-link:hover {
+    color: #12263a;
+    text-decoration: none;
+    background-color: #f2f6fb;
+}
+
 header h1 {
     font-family: var(--font-header);
     font-size: 2.5rem;
@@ -317,6 +360,42 @@ tr:hover {
     margin-bottom: 5px;
 }
 
+/* Sponsor */
+#sponsor {
+    padding-top: 40px;
+}
+
+.sponsor-highlight {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 26px 28px;
+    border-radius: 12px;
+    border: 1px solid #cfe0f7;
+    border-left: 6px solid var(--primary-color);
+    background: linear-gradient(135deg, #f7fbff, #eef5ff);
+    box-shadow: 0 6px 18px rgba(0, 86, 179, 0.08);
+}
+
+.sponsor-highlight p {
+    margin: 0 0 16px;
+}
+
+.sponsor-cta {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 10px 16px;
+    border-radius: 6px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.sponsor-cta:hover {
+    background-color: var(--secondary-color);
+    color: #fff;
+    text-decoration: none;
+}
+
 /* Footer */
 footer {
     background-color: #333;
@@ -344,5 +423,12 @@ footer {
     .tracks {
         flex-direction: column;
     }
-}
 
+    header .hero-sponsor-badge {
+        margin-bottom: 16px;
+    }
+
+    .sponsor-highlight {
+        padding: 20px;
+    }
+}
