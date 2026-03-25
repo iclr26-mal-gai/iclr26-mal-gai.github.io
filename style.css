@@ -104,9 +104,8 @@ header .hero-sponsor-link {
 
 header .hero-sponsor-logo {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
+    height: 55px;
+    object-fit: contain;
     display: block;
 }
 
